@@ -11,7 +11,8 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     width: '100%',
-    paddingVertical: 20,
+    paddingTop: 20,
+    paddingBottom: 10,
     marginBottom: 20,
   },
   button: {
@@ -23,12 +24,14 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     backgroundColor: '#fff',
   },
+  loading: {
+    marginTop: '60%',
+    transform: [{ scale: 3 }],
+  },
   filmeScrollView: {
     width: '100%',
   },
   filmeView: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     borderWidth: 2,
     borderColor: '#ccc',
     borderRadius: 10,
@@ -41,19 +44,18 @@ export const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   filmeImage: {
-    width: 150,
-    height: 150,
-  },
-  filmeTituloView: {
-    flex: 1,
-    alignItems: 'flex-start',  
-    flexWrap: 'wrap',
+    height: 300,
+    resizeMode: 'contain', // Adicionado para fazer a imagem se adaptar
   },
   filmeTitulo: {
-    fontSize: 20,
+    fontSize: 19,
     fontWeight: 'bold',
     marginTop: 10,
     paddingHorizontal: 10,
     flexShrink: 1,
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlignVertical: 'center', // Add this line to center the text vertically
   },
 });
